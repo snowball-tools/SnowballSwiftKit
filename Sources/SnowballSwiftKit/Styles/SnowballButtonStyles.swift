@@ -31,7 +31,10 @@ public enum SnowballButtonSize {
 }
 
 public struct SnowballButtonStyle: ButtonStyle {
-    @Environment(\.isEnabled) private var isEnabled: Bool
+    
+    @Environment(\.isEnabled)
+    private var isEnabled: Bool
+    
     let color: Color
     let foregroundColor: Color
     let buttonSize: SnowballButtonSize

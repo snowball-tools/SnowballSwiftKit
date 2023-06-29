@@ -63,7 +63,11 @@ public struct ToastView: View {
         .frame(maxWidth: .infinity, alignment: .topLeading)
         .padding(.all, 12)
         .background(.background)
-        .overlay(RoundedRectangle(cornerRadius: 12).stroke(.separator, lineWidth: 1))
+        #if os(macOS)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(nsColor: .separatorColor), lineWidth: 1))
+        #else
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(uiColor: .separator), lineWidth: 1))
+        #endif
         .cornerRadius(12)
         .shadow(color: Color.primary.opacity(0.06), radius: 10, x: 0, y: 3)
         .shadow(color: Color.primary.opacity(0.04), radius: 3, x: 0, y: 1)
