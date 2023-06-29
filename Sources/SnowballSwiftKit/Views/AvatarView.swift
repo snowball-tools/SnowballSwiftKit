@@ -11,11 +11,6 @@ public struct AvatarView: View {
     let image: Image?
     let number: Int?
 
-    public init(_ image: UIImage? = nil, number: Int? = nil) {
-        self.image = image != nil ? Image(uiImage: image!) : nil
-        self.number = number
-    }
-    
     public init(_ imageName: String, number: Int? = nil) {
         self.image = Image(imageName)
         self.number = number
@@ -32,7 +27,7 @@ public struct AvatarView: View {
     }
 
     public var body: some View {
-        Color(image != nil ? .clear : UIColor.secondarySystemFill)
+        Color(image != nil ? .clear : .clear) // TODO
             .aspectRatio(1, contentMode: .fit)
             .background(SnowballAvatarBackgroundView(image, number: number))
             .overlay(Circle()
@@ -45,11 +40,6 @@ public struct AvatarView: View {
 public struct SnowballAvatarBackgroundView: View {
     let image: Image?
     let number: Int?
-
-    public init(_ image: UIImage? = nil, number: Int? = nil) {
-        self.image = image != nil ? Image(uiImage: image!) : nil
-        self.number = number
-    }
 
     public init(_ image: Image? = nil, number: Int? = nil) {
         self.image = image
@@ -64,7 +54,7 @@ public struct SnowballAvatarBackgroundView: View {
         } else if let number = number {
             Text("+\(number)")
                 .font(.caption2)
-                .foregroundColor(Color(UIColor.secondaryLabel))
+                .foregroundColor(.secondary)
                 .bold()
                 .lineLimit(1)
                 .minimumScaleFactor(0.01)
@@ -78,7 +68,7 @@ public struct SnowballAvatarBackgroundView: View {
 struct SnowballAvatar_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            AvatarView(UIImage(systemName: "person.circle"))
+//            AvatarView(UIImage(systemName: "person.circle")) TODO
             AvatarView(67)
                 .frame(height: 200)
         }

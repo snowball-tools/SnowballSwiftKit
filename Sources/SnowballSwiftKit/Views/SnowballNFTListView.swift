@@ -42,7 +42,7 @@ public struct SnowballNFTListView: View {
                         .font(.caption)
                         .lineLimit(1)
                 }.padding()
-            }.listRowInsets(EdgeInsets(.zero))
+            }.listRowInsets(.init())
             if #available(iOS 15, *) {
                 view.listRowSeparator(.hidden)
             } else {
@@ -50,12 +50,16 @@ public struct SnowballNFTListView: View {
             }
         }
         .id(listId)
-        .navigationBarItems(trailing: Button(action: {
-            ImagePipeline.shared.cache.removeAll()
-            self.listId = UUID()
-        }, label: {
-            Image(systemName: "arrow.clockwise")
-        }))
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button {
+                    ImagePipeline.shared.cache.removeAll()
+                    self.listId = UUID()
+                } label: {
+                    Image(systemName: "arrow.clockwise")
+                }
+            }
+        }
         .listStyle(.plain)
         .onAppear {
             viewModel.fetch(type: .nfts(key: alchemyKey, address: ethAddress), chain: self.chain)
