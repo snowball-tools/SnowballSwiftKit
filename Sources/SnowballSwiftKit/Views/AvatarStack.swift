@@ -5,7 +5,6 @@
 //  Created by Vivian Phung on 5/29/23.
 //
 
-import UIKit
 import SwiftUI
 import SnowballAssetKit
 

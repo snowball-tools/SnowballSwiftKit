@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 public struct AvatarView: View {
     let image: Image?
@@ -14,6 +13,11 @@ public struct AvatarView: View {
 
     public init(_ image: UIImage? = nil, number: Int? = nil) {
         self.image = image != nil ? Image(uiImage: image!) : nil
+        self.number = number
+    }
+    
+    public init(_ imageName: String, number: Int? = nil) {
+        self.image = Image(imageName)
         self.number = number
     }
 
