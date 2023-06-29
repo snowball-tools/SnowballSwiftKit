@@ -32,8 +32,10 @@ public struct AvatarStack: View {
 
 struct SnowballAvatarStack_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarStack([SnowballImage(.sol),
-                             SnowballImage(.metamask)])
-            .frame(height: 32)
+        AvatarStack([
+            Image(.sol),
+            Image(.metamask)
+        ])
+        .frame(height: 32)
     }
 }
