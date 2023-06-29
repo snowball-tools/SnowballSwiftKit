@@ -23,7 +23,7 @@ public struct AvatarStack: View {
                AvatarView(avatar)
             }
             if self.number > 0 {
-                AvatarView(self.number)
+               AvatarView(self.number)
             }
         }
     }
