@@ -32,7 +32,7 @@ public struct SnowballNFTListView: View {
             return DataLoader(configuration: config)
         }()
     }
-
+    
     public var body: some View {
         List(viewModel.models?.nfts ?? []) { nft in
             let view = VStack {
@@ -42,12 +42,9 @@ public struct SnowballNFTListView: View {
                         .font(.caption)
                         .lineLimit(1)
                 }.padding()
-            }.listRowInsets(.init())
-            if #available(iOS 15, *) {
-                view.listRowSeparator(.hidden)
-            } else {
-                view
             }
+            .listRowInsets(.init())
+            view
         }
         .id(listId)
         .toolbar {

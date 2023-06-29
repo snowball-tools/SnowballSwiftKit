@@ -65,6 +65,8 @@ public struct ToastView: View {
         .background(.background)
         #if os(macOS)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(nsColor: .separatorColor), lineWidth: 1))
+        #elseif os(watchOS)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.clear, lineWidth: 1))
         #else
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(uiColor: .separator), lineWidth: 1))
         #endif
