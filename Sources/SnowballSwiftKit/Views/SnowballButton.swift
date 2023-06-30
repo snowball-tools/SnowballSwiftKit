@@ -8,11 +8,11 @@
 import SwiftUI
 
 public struct SnowballButton: View {
-    var title: String? = nil
-    var leftIcon: String? = nil
-    var leftSystemIcon: String? = nil
-    var rightIcon: String? = nil
-    var rightSystemIcon: String? = nil
+    var title: String?
+    var leftIcon: String?
+    var leftSystemIcon: String?
+    var rightIcon: String?
+    var rightSystemIcon: String?
     var spacing: CGFloat = 0
     var action: () -> Void
 
@@ -31,7 +31,7 @@ public struct SnowballButton: View {
         self.action = action
         self.spacing = spacing
     }
-    
+
     public var body: some View {
         Button(action: action) {
             HStack(spacing: spacing) {
@@ -50,7 +50,7 @@ public struct SnowballButton: View {
                 if let rightSystemIcon = rightSystemIcon {
                     Image(systemName: rightSystemIcon)
                 }
-                
+
             }
         }
     }

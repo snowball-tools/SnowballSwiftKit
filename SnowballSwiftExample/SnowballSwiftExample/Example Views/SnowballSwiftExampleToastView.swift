@@ -11,21 +11,21 @@ import SnowballSwiftKit
 struct SnowballSwiftExampleToastView: View {
     var body: some View {
         VStack(spacing: 10) {
-            SnowballToastView(type: .error, title: SnowballToastType.error.rawValue)
+            ToastView(type: .error, title: ToastStyle.error.rawValue)
 
-            SnowballToastView(type: .neutral, title: SnowballToastType.neutral.rawValue)
+            ToastView(type: .neutral, title: ToastStyle.neutral.rawValue)
 
-            SnowballToastView(type: .positive, title: SnowballToastType.positive.rawValue)
+            ToastView(type: .positive, title: ToastStyle.positive.rawValue)
 
-            SnowballToastView(type: .warning, title: SnowballToastType.warning.rawValue)
+            ToastView(type: .warning, title: ToastStyle.warning.rawValue)
 
-            SnowballToastView(type: .error, title: SnowballToastType.error.rawValue, subtitle: "Add some description for the toast here.")
+            ToastView(type: .error, title: ToastStyle.error.rawValue, subtitle: "Add some description for the toast here.")
 
-            SnowballToastView(type: .neutral, title: SnowballToastType.neutral.rawValue, subtitle: "Add some description for the toast here.")
+            ToastView(type: .neutral, title: ToastStyle.neutral.rawValue, subtitle: "Add some description for the toast here.")
 
-            SnowballToastView(type: .positive, title: SnowballToastType.positive.rawValue, subtitle: "Add some description for the toast here.")
+            ToastView(type: .positive, title: ToastStyle.positive.rawValue, subtitle: "Add some description for the toast here.")
 
-            SnowballToastView(type: .warning, title: SnowballToastType.warning.rawValue, subtitle: "Add some description for the toast here.")
+            ToastView(type: .warning, title: ToastStyle.warning.rawValue, subtitle: "Add some description for the toast here.")
         }
     }
 }
