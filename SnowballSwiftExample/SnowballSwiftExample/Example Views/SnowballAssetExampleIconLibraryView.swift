@@ -19,7 +19,7 @@ struct SnowballAssetExampleIconLibraryView: View {
                 .font(.headline)
             LazyVGrid(columns: gridLayout, spacing: 10) {
                 ForEach(SnowballIcon.allCases) { type in
-                    SnowballImage(type)
+                    Image(type)
                 }
             }
             Divider()
@@ -27,18 +27,18 @@ struct SnowballAssetExampleIconLibraryView: View {
                 .font(.headline)
             LazyVGrid(columns: gridLayout, spacing: 10) {
                 ForEach(SnowballIcon.allCases) { type in
-                    SnowballImage(type.sfSymbol)
+                    Image(type.sfSymbol)
                 }
             }
             Divider()
             VStack(alignment: .leading) {
                 ForEach(SnowballIcon.allCases) { type in
                     HStack {
-                        SnowballImage(type)
+                        Image(type)
                         Divider().frame(height: 20)
                         Text("SnowballImage(.\(type.rawValue))")
                         Spacer()
-                        SnowballImage(type.sfSymbol)
+                        Image(type.sfSymbol)
                     }
                 }
             }

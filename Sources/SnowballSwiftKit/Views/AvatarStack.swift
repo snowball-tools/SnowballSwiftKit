@@ -5,7 +5,6 @@
 //  Created by Vivian Phung on 5/29/23.
 //
 
-import UIKit
 import SwiftUI
 import SnowballAssetKit
 
@@ -24,7 +23,7 @@ public struct AvatarStack: View {
                AvatarView(avatar)
             }
             if self.number > 0 {
-                AvatarView(self.number)
+               AvatarView(self.number)
             }
         }
     }
@@ -32,8 +31,10 @@ public struct AvatarStack: View {
 
 struct SnowballAvatarStack_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarStack([SnowballImage(.sol),
-                             SnowballImage(.metamask)])
-            .frame(height: 32)
+        AvatarStack([
+            Image(.sol),
+            Image(.metamask)
+        ])
+        .frame(height: 32)
     }
 }

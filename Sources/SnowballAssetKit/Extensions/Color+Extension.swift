@@ -6,7 +6,3 @@
 //
 
 import SwiftUI
-
-public func SnowballCustomColor(_ name: String) -> Color {
-    Color(UIColor(named: name, in: Bundle.module, compatibleWith: nil)!)
-}

@@ -54,7 +54,7 @@ public struct SnowballNFTGridView: View {
                                     .padding(.top, 5)
                             }
                             .padding(5)
-                            .background(Color(.systemGroupedBackground))
+                            .background(.background) // TODO: grouped background
                             .cornerRadius(10)
                             .shadow(radius: 3)
                         }
@@ -63,12 +63,16 @@ public struct SnowballNFTGridView: View {
                     }
                 }
                 .padding(10)
-                .navigationBarItems(trailing: Button(action: {
-                    ImagePipeline.shared.cache.removeAll()
-                    self.listId = UUID()
-                }, label: {
-                    Image(systemName: "arrow.clockwise")
-                }))
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction) {
+                        Button {
+                            ImagePipeline.shared.cache.removeAll()
+                            self.listId = UUID()
+                        } label: {
+                            Image(systemName: "arrow.clockwise")
+                        }
+                    }
+                }
                 .listStyle(.plain)
             }
             .onAppear {

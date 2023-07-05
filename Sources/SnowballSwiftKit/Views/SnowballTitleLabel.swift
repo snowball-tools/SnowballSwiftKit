@@ -27,7 +27,6 @@ public struct SnowballTitleLabel: View {
         VStack(alignment: .leading, spacing: spacing) {
             Text(title)
                 .font(font)
-
             if let subtitle = subtitle {
                 Text(subtitle)
                     .font(.footnote)
@@ -40,13 +39,13 @@ public struct SnowballTitleLabel: View {
 struct SnowballTitleLabel_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SnowballTitleLabel(title: "Label")
+            SnowballTitleLabel(title: "Title")
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
 
             Divider()
 
-            SnowballTitleLabel(title: "Label",
+            SnowballTitleLabel(title: "Title 2",
                                subtitle: "Add some description for the toast here.")
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .topLeading)

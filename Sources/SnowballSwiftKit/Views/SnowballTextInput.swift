@@ -60,7 +60,7 @@ public struct SnowballTextInput: View {
                 }
             }
             .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
-            .background(Color(UIColor.secondarySystemBackground))
+//            .background(Color(UIColor.secondarySystemBackground)) // TODO
             .cornerRadius(12)
         }
     }

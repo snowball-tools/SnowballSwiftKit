@@ -5,7 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "SnowballSwiftKit",
-    platforms: [.iOS(.v15) ],
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v13),
+        .watchOS(.v8)
+    ],
     products: [
         .library(
             name: "SnowballSwiftKit",
@@ -15,15 +19,12 @@ let package = Package(
             targets: ["SnowballAssetKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/kean/Nuke.git", from: "12.1.0"),
     ],
     targets: [
         .target(
             name: "SnowballSwiftKit",
             dependencies: [
                 "SnowballAssetKit",
-                "Nuke",
-                .product(name: "NukeUI", package: "Nuke"),
             ]
         ),
         .target(
