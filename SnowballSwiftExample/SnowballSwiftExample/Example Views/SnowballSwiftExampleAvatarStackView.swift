@@ -13,28 +13,28 @@ import SnowballAssetKit
 struct SnowballSwiftExampleAvatarStackView: View {
     var body: some View {
         VStack {
-            SnowballAvatarRemoteStack([SnowballAvatarRemoteModel(imageURL: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg"), SnowballAvatarRemoteModel(imageURL: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg")])
+            AsyncAvatarStack([SnowballAvatarRemoteModel(imageURL: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg"), SnowballAvatarRemoteModel(imageURL: "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg")])
 
-            SnowballAvatarStack([SnowballImage(.metamask),
+            AvatarStack([SnowballImage(.metamask),
                                  SnowballImage(.coinbaseWallet),
                                  SnowballImage(.walletConnect),
                                  SnowballImage(.argent),
                                  SnowballImage(.brave)])
                 .frame(height: 40)
 
-            SnowballAvatarStack([SnowballImage(.metamask),
+            AvatarStack([SnowballImage(.metamask),
                                  SnowballImage(.coinbaseWallet),
                                  SnowballImage(.walletConnect),
                                  SnowballImage(.argent)])
                 .frame(height: 32)
 
-            SnowballAvatarStack([SnowballImage(.metamask),
+            AvatarStack([SnowballImage(.metamask),
                                  SnowballImage(.coinbaseWallet),
                                  SnowballImage(.walletConnect),
                                  SnowballImage(.argent)])
                 .frame(height: 24)
 
-            SnowballAvatarStack([SnowballImage(.metamask),
+            AvatarStack([SnowballImage(.metamask),
                                  SnowballImage(.coinbaseWallet),
                                  SnowballImage(.walletConnect),
                                  SnowballImage(.argent)])

@@ -10,6 +10,7 @@
 		084672EF2A1C2B8B00C7FB93 /* SnowballSwiftExampleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084672EE2A1C2B8B00C7FB93 /* SnowballSwiftExampleText.swift */; };
 		084672F12A1C2FFF00C7FB93 /* SnowballSwiftExampleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084672F02A1C2FFF00C7FB93 /* SnowballSwiftExampleButtonsView.swift */; };
 		0852879D2A213A310050D56D /* SnowballSwiftExampleSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852879C2A213A310050D56D /* SnowballSwiftExampleSearchBarView.swift */; };
+		087056612A4F743200F021B6 /* SnowballSwiftExampleChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087056602A4F743200F021B6 /* SnowballSwiftExampleChipView.swift */; };
 		0877BF942A1C18D500A236AB /* SnowballSwiftExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877BF932A1C18D500A236AB /* SnowballSwiftExampleApp.swift */; };
 		0877BF962A1C18D500A236AB /* SnowballSwiftKitHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877BF952A1C18D500A236AB /* SnowballSwiftKitHomeView.swift */; };
 		0877BF982A1C18D600A236AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0877BF972A1C18D600A236AB /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		084672EE2A1C2B8B00C7FB93 /* SnowballSwiftExampleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftExampleText.swift; sourceTree = "<group>"; };
 		084672F02A1C2FFF00C7FB93 /* SnowballSwiftExampleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftExampleButtonsView.swift; sourceTree = "<group>"; };
 		0852879C2A213A310050D56D /* SnowballSwiftExampleSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftExampleSearchBarView.swift; sourceTree = "<group>"; };
+		087056602A4F743200F021B6 /* SnowballSwiftExampleChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftExampleChipView.swift; sourceTree = "<group>"; };
 		0877BF902A1C18D500A236AB /* SnowballSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowballSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0877BF932A1C18D500A236AB /* SnowballSwiftExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftExampleApp.swift; sourceTree = "<group>"; };
 		0877BF952A1C18D500A236AB /* SnowballSwiftKitHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowballSwiftKitHomeView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				088D74112A20080900216FC7 /* SnowballSwiftExampleTitleLabelView.swift */,
 				0852879C2A213A310050D56D /* SnowballSwiftExampleSearchBarView.swift */,
 				087F60F22A311A0100672071 /* SnowballSeedPhraseImportView.swift */,
+				087056602A4F743200F021B6 /* SnowballSwiftExampleChipView.swift */,
 			);
 			path = "Example Views";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				088D74092A1C8E7B00216FC7 /* SnowballSwiftExampleTextInputView.swift in Sources */,
 				0852879D2A213A310050D56D /* SnowballSwiftExampleSearchBarView.swift in Sources */,
 				087F60F32A311A0100672071 /* SnowballSeedPhraseImportView.swift in Sources */,
+				087056612A4F743200F021B6 /* SnowballSwiftExampleChipView.swift in Sources */,
 				0877BF962A1C18D500A236AB /* SnowballSwiftKitHomeView.swift in Sources */,
 				084672F12A1C2FFF00C7FB93 /* SnowballSwiftExampleButtonsView.swift in Sources */,
 				088D74102A1E80BE00216FC7 /* SnowballAssetExampleIconLibraryView.swift in Sources */,

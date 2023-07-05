@@ -8,7 +8,7 @@
 import SwiftUI
 
 public enum SnowballColor: String {
-    case filledButton, filledButtonForeground, tintedButton, tintedButtonForeground, dangerButton, dangerButtonForeground
+    case filledButton, filledButtonForeground, tintedButton, tintedButtonForeground, dangerButton, dangerButtonForeground, secondaryButton
 
     public var color: Color {
         SnowballCustomColor(self.rawValue)

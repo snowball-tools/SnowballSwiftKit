@@ -69,10 +69,18 @@ struct SnowballSwiftKitHomeView: View {
                     }
                 }
 
-                NavigationLink("SnowballAssetKit Library") {
-                    SnowballAssetExampleIconLibraryView()
-                        .navigationTitle("Icons")
-                        .padding(.horizontal)
+                Group {
+                    NavigationLink("SnowballAssetKit Library") {
+                        SnowballAssetExampleIconLibraryView()
+                            .navigationTitle("Icons")
+                            .padding(.horizontal)
+                    }
+
+                    NavigationLink("Chips") {
+                        SnowballSwiftExampleChipView()
+                            .navigationTitle("Chips")
+                            .padding(.horizontal)
+                    }
                 }
             }
             .listStyle(.plain)
